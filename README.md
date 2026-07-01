@@ -40,7 +40,7 @@ By treating uncurated instruction datasets as data-level technical debt, GePS pr
    To score and filter your own dataset, run the following command:
    ```bash
    python main.py --dataset_path ./data/alpaca_gpt4_data.json --output_path./data/selected_subset.json --top_k 5000
-   ```bash
+
 # Project Structure
   main.py: The entry point for executing the GePS selection pipeline[cite: 3].
   geps_core.py: Implementation of the three intrinsic metrics (Entropy, Activation, Stability)[cite: 3].
