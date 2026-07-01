@@ -1,0 +1,25 @@
+# ==========================================
+# GePS: Generalization-Potential Score
+# Environment Requirements
+# ==========================================
+
+# 1. Core Framework (Explicitly specified in the paper)
+torch==2.1.0
+
+# 2. LLM Operations & Distributed Fine-Tuning
+transformers>=4.40.0  # Required for Meta-Llama-3-8B-Instruct support
+accelerate
+deepspeed
+peft
+datasets
+
+# 3. Mathematical & Vector Computations (For GePS metrics)
+numpy
+scipy
+scikit-learn  # For cosine similarity and geometric mean aggregation
+
+# 4. Evaluation Benchmarks
+fschat  # Required for MT-Bench multi-turn evaluation
+alpaca-eval  # Required for Alpaca-Eval single-turn win rate
+human-eval  # Required for HumanEval Pass@10 code generation metric
+openai  # Required for API-based judge models (e.g., DeepSeek-V3)
