@@ -1,1 +1,1 @@
-
+modelscope download --model LLM-Research/Meta-Llama-3-8B-Instruct
